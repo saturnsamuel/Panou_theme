@@ -1,0 +1,319 @@
+
+<!doctype html>
+<html class="no-js" lang="{{ shop.locale }}">
+  
+<head>
+{% include "starapps-core" %}
+
+  <script>GSXMLHttpRequest = XMLHttpRequest;</script>
+
+<!-- Google Ads Remarketing Tag By FeedArmy Version 2.16 START -->
+<!-- FeedArmy tutorial found at https://feedarmy.com/kb/adding-google-adwords-remarketing-tag-to-shopify/ -->
+
+<!-- CODE SETTINGS START -->
+<!-- CODE SETTINGS START -->
+
+<!-- Please add your Google Ads Audience Source Tag ID -->
+{% assign fa_google_ads_audience_tag_id = 741203350 %}
+
+<!-- Please add your alpha2 code, you can find it here: https://help.shopify.com/en/api/custom-storefronts/storefront-api/reference/enum/countrycode -->
+{% assign fa_product_id_alpha2_code = ‘BR’ %}
+
+<!-- set your product id values are default, product_id, parent_id, sku-->
+{% assign fa_product_id = 'product_id' %}
+
+<!-- CODE SETTINGS END -->
+<!-- CODE SETTINGS END -->
+
+<!-- ==================================== -->
+<!-- DO NOT EDIT ANYTHING BELOW THIS LINE -->
+{% if fa_google_coding %}{% assign fa_google_coding = true %}{%- else -%}{% assign fa_google_coding = false %}{%- endif -%}
+{% if fa_google_coding == false %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-{{ fa_google_ads_audience_tag_id }}"></script>
+{%- endif -%}
+{%- assign fa_current_variant = product.selected_or_first_available_variant -%}
+{%- if cart.currency.iso_code == 'GBP' or cart.currency.iso_code == 'USD' or cart.currency.iso_code == 'CAD' or cart.currency.iso_code == 'AUD' or cart.currency.iso_code == 'BWP' or cart.currency.iso_code == 'BND' or cart.currency.iso_code == 'DOP' or cart.currency.iso_code == 'GTQ' or cart.currency.iso_code == 'HKD' or cart.currency.iso_code == 'INR' or cart.currency.iso_code == 'ILS' or cart.currency.iso_code == 'YEN' or cart.currency.iso_code == 'KES' or cart.currency.iso_code == 'KOR' or cart.currency.iso_code == 'LBP' or cart.currency.iso_code == 'MYR' or cart.currency.iso_code == 'MXN' or cart.currency.iso_code == 'NPR' or cart.currency.iso_code == 'NZD' or cart.currency.iso_code == 'NIO' or cart.currency.iso_code == 'NGN' or cart.currency.iso_code == 'PKR' or cart.currency.iso_code == 'CNY' or cart.currency.iso_code == 'PHP' or cart.currency.iso_code == 'SGD' or cart.currency.iso_code == 'LKR' or cart.currency.iso_code == 'CHF' or cart.currency.iso_code == 'TWD' or cart.currency.iso_code == 'TSH' or cart.currency.iso_code == 'THB' or cart.currency.iso_code == 'UGX' or cart.currency.iso_code == 'KWD' -%}
+{% if template contains 'product' %}
+{%- assign fa_product_price = fa_current_variant.price | money_without_currency | remove:',' -%}
+{% elsif template contains 'cart' %}
+{%- assign fa_product_price = cart.total_price | money_without_currency | remove:',' -%}
+{% endif %}
+{%- else -%}
+{% if template contains 'product' %}
+{%- assign fa_product_price = fa_current_variant.price | money_without_currency | remove:'.' | replace: ',', '.' -%}
+{% elsif template contains 'cart' %}
+{%- assign fa_product_price = cart.total_price | money_without_currency | remove:'.' | replace: ',', '.' -%}
+{% endif %}
+{%- endif -%}
+
+{%- if fa_product_id == 'default' -%}
+{%- capture fa_product_id_value -%}shopify_{{ fa_product_id_alpha2_code }}_{{ product.id }}_{{ fa_current_variant.id }}{%- endcapture -%}
+{%- elsif fa_product_id == 'product_id' -%}
+{%- capture fa_product_id_value -%}{{ fa_current_variant.id }}{%- endcapture -%}
+{%- elsif fa_product_id == 'parent_id' -%}
+{%- capture fa_product_id_value -%}{{product.id }}{%- endcapture -%}
+{%- elsif fa_product_id == 'sku' -%}
+{%- capture fa_product_id_value -%}{{ fa_current_variant.sku }}{%- endcapture -%}
+{%- endif -%}
+
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-{{ fa_google_ads_audience_tag_id }}');
+</script>
+
+{% if template contains 'collection' %}
+{% assign fa_event = 'view_item_list' %}
+{% elsif template contains 'product' %}
+{% assign fa_event = 'view_item' %}
+{% elsif template contains 'search' %}
+{% assign fa_event = 'view_search_results' %}
+{% elsif template contains 'cart' %}
+{% assign fa_event = 'add_to_cart' %}
+{% elsif template contains 'index' %}
+{% assign fa_event = 'home' %}
+{% else %}
+{% assign fa_event = 'other' %}
+{% endif %}
+
+<script>
+  gtag('event', '{{ fa_event }}', {
+    'send_to': 'AW-{{ fa_google_ads_audience_tag_id }}',
+  	  {% if template contains 'product' or template contains 'cart' %}'value': {{ fa_product_price }},{% endif %}
+	{% if template contains 'product' %}
+    'items': [{
+			'id': '{{fa_product_id_value}}',
+      'google_business_vertical': 'retail'
+    }]
+	{% elsif template contains 'cart' %}
+	'items': [
+	{% for item in cart.items %}
+	{
+		{% if fa_product_id == 'default' %}
+			'id': 'shopify_{{ fa_product_id_alpha2_code }}_{{ item.product_id }}_{{ item.variant_id }}',
+		{% elsif fa_product_id == 'product_id' %}
+			'id': '{{ item.variant_id }}',
+		{% elsif fa_product_id == 'parent_id' %}
+			'id': '{{ item.product_id }}',
+		{% elsif fa_product_id == 'sku' %}
+			'id': '{{ item.sku }}',
+		{% endif %}
+      'google_business_vertical': 'retail'
+    },
+	{% endfor %}
+	]
+	{% endif %}
+  });
+</script>
+<!-- Google Ads Remarketing Tag By FeedArmy Version 2.16 END -->
+
+  
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3MB46Z');</script>
+<!-- End Google Tag Manager -->
+  
+
+<meta name="google-site-verification" content="ZrNJErs3yBLBvv3rdpsbc4yXI_kN_I6ebkXEeJRNhMA" />
+<meta name="google-site-verification" content="TznczYetxgulKZMm-9wg1msTC7Qfxni1n9zV8PBhAfE" />
+  
+{% include 'kiwiSizing' %}
+  <meta charset="utf-8">
+  {% include 'pluginseo' %}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="{{ settings.color_button }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  {%- if settings.favicon != blank -%}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+  {%- endif -%}
+
+
+  
+  {% include 'social-meta-tags' %}
+ 
+  <script src="//www.powr.io/powr.js" external-type="shopify" powr-load="sync"></script>
+
+  {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+  <script>
+    var theme = {
+      breakpoints: {
+        medium: 750,
+        large: 990,
+        widescreen: 1400
+      },
+      strings: {
+        addToCart: {{ 'products.product.add_to_cart' | t | json }},
+        soldOut: {{ 'products.product.sold_out' | t | json }},
+        unavailable: {{ 'products.product.unavailable' | t | json }},
+        regularPrice: {{ 'products.product.regular_price' | t | json }},
+        salePrice: {{ 'products.product.sale_price' | t | json }},
+        sale: {{ 'products.product.on_sale' | t | json }},
+        fromLowestPrice: {{ 'products.product.from_lowest_price_html' | t: lowest_price: '[price]' | json }},
+        vendor: {{'products.product.vendor' | t | json }},
+        showMore: {{ 'general.filters.show_more' | t | json }},
+        showLess: {{ 'general.filters.show_less' | t | json }},
+        searchFor: {{ 'general.search.search_for' | t | json }},
+        addressError: {{ 'sections.map.address_error' | t | json }},
+        addressNoResults: {{ 'sections.map.address_no_results' | t | json }},
+        addressQueryLimit: {{ 'sections.map.address_query_limit_html' | t | json }},
+        authError: {{ 'sections.map.auth_error_html' | t | json }},
+        newWindow: {{ 'general.accessibility.link_messages.new_window' | t | json }},
+        external: {{ 'general.accessibility.link_messages.external' | t | json }},
+        newWindowExternal: {{ 'general.accessibility.link_messages.new_window_and_external' | t | json }},
+        removeLabel: {{ 'cart.label.remove' | t: product: '[product]' | json }},
+        update: {{ 'cart.label.update' | t | json }},
+        quantity: {{ 'cart.label.quantity' | t | json }},
+        discountedTotal: {{ 'cart.label.discounted_total' | t | json }},
+        regularTotal: {{ 'cart.label.regular_total' | t | json }},
+        priceColumn: {{ 'cart.label.price_column' | t | json }},
+        quantityMinimumMessage: {{ 'products.product.quantity_minimum_message' | t | json }},
+        cartError: {{ 'cart.general.cart_error' | t | json }},
+        removedItemMessage: {{ 'cart.general.removed_item_html' | t: quantity: '[quantity]', link: '[link]' | json }},
+        unitPrice: {{ 'products.product.unit_price_label' | t | json }},
+        unitPriceSeparator: {{ 'general.accessibility.unit_price_separator' | t | json }},
+        oneCartCount: {{ 'cart.popup.cart_count' | t: count: 1 | json }},
+        otherCartCount: {{ 'cart.popup.cart_count' | t: count: '[count]' | json }},
+        quantityLabel: {{ 'cart.popup.quantity_label' | t: quantity_count: '[count]' | json }},
+        products: {{ 'general.search.products' | t | json }},
+        loading: {{ 'general.search.loading' | t | json }},
+        number_of_results: {{ 'general.search.number_of_results' | t: result_number: '[result_number]', results_count: '[results_count]' | json }},
+        number_of_results_found: {{ 'general.search.number_of_results_found' | t: results_count: '[results_count]' | json }},
+        one_result_found: {{ 'general.search.one_result_found' | t | json }}
+      },
+      moneyFormat: {{ shop.money_format | json }},
+      moneyFormatWithCurrency: {{ shop.money_with_currency_format | json }},
+      settings: {
+        predictiveSearchEnabled: {{ settings.predictive_search_enabled | json }},
+        predictiveSearchShowPrice: {{ settings.predictive_search_show_price | json }},
+        predictiveSearchShowVendor: {{ settings.predictive_search_show_vendor | json }}
+      }
+    }
+
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+
+  {%- if request.page_type contains 'customers/' -%}
+    <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
+  <script src="{{ 'lazysizes.js' | asset_url }}" async="async"></script>
+  <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+
+  {% render 'header-scripts.zipifypages', renderctx: 'thm' %}{% render 'treedify' %}{%- if tinyscript -%}{{ content_for_header }}{%- else -%}{% render 'tiny-script-control' %}{%- endif -%}<script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/46fd696f-9285-4a40-be7f-55654f409dcc-loader.js" ></script>
+
+
+
+  
+{% include 'cscode_discount' %}
+  
+{% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
+  {% render 'qikify-apps' %}
+<!-- GSSTART Infinite Scroll code start. Do not change --> {% if collection.all_products_count > 1 or product.id > 1 %} <script type="text/javascript" src="https://gravity-apps.com/shopify/js/shopify/infinitescroll5494.js?v=c9290fe6fdbaca81448babe82c41ab5c"></script> {% endif %} <!-- nfinite Scroll code end. Do not change GSEND -->
+<link rel="stylesheet" href="{{ 'seedgrow-whatsapp-style.css' | asset_url }}">{% capture cur %}{% include "booster-currency" %}{% endcapture %}{% unless cur contains "Liquid error" %}{{ cur }}{% endunless %}
+</head>
+
+<body class="template-{{ request.page_type | handle }}">
+
+      <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3MB46Z"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+  <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
+
+  {%- if settings.enable_ajax -%}
+    {% include 'cart-popup' %}
+  {%- endif -%}
+
+  {% section 'header' %}
+
+  <div class="page-container drawer-page-content" id="PageContainer">
+
+    <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
+      {{ content_for_layout }}
+	<noscript class="endOfLayoutContentX" type="text/mark"></noscript>{% render 'treedify_script' %}
+    </main>
+
+    {% section 'footer' %}
+
+    <div id="slideshow-info" class="visually-hidden" aria-hidden="true">
+      {{- 'sections.slideshow.navigation_instructions' | t -}}
+    </div>
+
+  </div>
+
+  <ul hidden>
+    <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
+    <li id="a11y-selection-message">{{ 'general.accessibility.selection_help' | t }}</li>
+  </ul>
+{% include 'social-login' %}<!--  MBC Bundle settings  -->
+  	<script>
+      const productType = '{{ product.type }}'
+      const productVariants = {{ product.variants | json }}
+        const productForms = document.querySelectorAll('form[action*="/cart/add"]')
+        let productForm
+        if (productForms.length) {
+        	productForm = Array.from(productForms).find(form => {
+              const selectVariants  = form.querySelector('[name="id"]'),
+                    selectVariantID = selectVariants ? Number(selectVariants.value) : '',
+                    findVariant     = productVariants.find(({id}) => id === selectVariantID)
+              let options, option
+              if (!findVariant) {
+                options = selectVariants ? selectVariants.querySelectorAll('option') : []
+                option  = Array.from(options).find(({value}) => Number(value) === productVariants[0].id)
+              }
+              if (findVariant || option) return true
+            })
+        }
+      const submitBtn = productForm ? productForm.querySelector('[type="submit"]') : null
+      if (submitBtn && productType === 'mbcBundle') {
+        submitBtn.setAttribute('disabled', 'disabled')
+      }
+	</script>
+  <!--  End MBC Bundle settings  -->
+ 
+ {% include 'booster-message' %}
+{% render 'page-footer.zipifypages', renderctx: 'thm', ocuapp: ocuapp %} <div class="index-section--flush powr-popup" id="shopify-section-popup-1622150591b1252b47"></div>
+ 
+<!-- amai_stp-added -->
+{% render 'amai_stp-theme-snippet' %}
+<!-- /amai_stp-added -->
+
+
+{% if content_for_header contains 'fastbundle.co' %}
+    {% render 'fast_bundle_service' %}
+{% endif %}
+  
+  
+ <div class="index-section--flush powr-popup" id="d8b46f26_1634758329"></div>
+
+
+  
+  
+  <!-- PickyStory code, do not modify. Safe to remove after the app is uninstalled -->
+  {% if content_for_header contains 'pickystory' %}
+    {% render 'pickystory-combos-prerender' %}
+  {% endif %}
+  <!-- PickyStory code end -->
+<script src="{{ 'seedgrow-whatsapp-init.js' | asset_url }}" defer="defer"></script><script src="{{ 'seedgrow-whatsapp-lib.js' | asset_url }}" defer="defer"></script><script src="{{ 'seedgrow-whatsapp-frontend.js' | asset_url }}" defer="defer"></script>{{ 'crucial-commerce-page-speed.js' | asset_url | script_tag }}
+ <div class="index-section--flush powr-popup" id="fb1d2706_1667915747"></div>
+  <div class="index-section--flush powr-popup" id="ed5fe15c_1678485235"></div>
+   <!-- PickyStory snippet "main_widget_script", do not modify. Safe to remove after the app is uninstalled -->
+  {% if content_for_header contains 'pickystory' %}
+    <script defer src="https://cdn.pickystory.com/widget/dist/latest/pickystory-widget.min.js"></script>
+  {% endif %}
+  <!-- PickyStory end snippet "main_widget_script" -->
+</body>    
+</html>
+
+
+<meta name="facebook-domain-verification" content="x4fui994e98eknw2u4o096s6yh2cs1" />
+

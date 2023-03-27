@@ -1,0 +1,56 @@
+<script type="text/javascript">
+{% comment %}
+/**
+ * Optimize rendering the combo products widget by the main PickyStory app.
+ * Rendered by layout/theme.liquid.
+ * If you choose to uninstall PickyStory, this snippet can be safely deleted.
+ * Get the app: https://go.pickystory.com/8nsjceym
+ * Contact us for any questions: hello@pickystory.com.
+ * Copyright (C) 2023 Picky Story Ltd. - All Rights Reserved
+ */
+{% endcomment %}
+; (() => {
+  const getPageProductHandle = () => {
+    const path = window.location.pathname
+    const searchTerm = '/products/'
+    const start = path.lastIndexOf(searchTerm)
+    if (start < 0) return null
+    const encoded = path.slice(start + searchTerm.length).replace('/', '')
+    return decodeURI(encoded) // Decode to handle non-English letters
+  }
+  const findProductForms = ({ productHandle, compoundProductHandles, insertionMode, productFormSelector }) => {
+    if (!compoundProductHandles.includes(productHandle) || insertionMode !== 'replace') {
+      return []
+    }
+    // Override cart URL inside the selector with a localized version if necessary
+    const selector = productFormSelector.replace('"/cart/add"', '"{{ routes.cart_add_url }}"')
+    return document.querySelectorAll(selector)
+  }
+  const isProductPage = /^.*\/products\/[A-Za-z0-9-_%]+\/?$/i.test(window.location.pathname)
+  if (!isProductPage) {
+    return
+  }
+  const productHandle = getPageProductHandle()
+  if (!productHandle) {
+    return
+  }
+  const productForms = [
+    ...findProductForms({
+      productHandle,
+      compoundProductHandles: ["biquini-canarias-marinho-2", "biquini-canarias-verde-1", "biquini-canarias-off-white", "biquini-canarias-preto-1", "biquini-buzios-off-white", "biquini-buzios-preto-1", "biquini-buzios-verde-1", "biquini-buzios-marinho-1", "biquini-tenerife-preto-1", "biquini-tenerife-marinho", "biquini-tenerife-verde-1", "biquini-seychelles-preto-1", "biquini-seychelles-off-white", "biquini-santorini-cereja", "biquini-santorini-ocre-uv50", "biquini-santorini-marinho-uv50", "biquini-canarias-cereja-uv50", "biquini-canarias-ocre-uv50", "biquini-seychelles-marinho-uv50", "biquini-santorini-chumbo", "biquini-santorini-off-white-uv50", "biquini-santorini-preto-uv50", "biquini-santorini-verde-uv50", "biquini-buzios-ocre-uv50", "biquini-buzios-cereja-uv50", "biquini-buzios-chumbo-uv50", "biquini-galapagos-cereja-uv50", "biquini-galapagos-chumbo-uv50", "biquini-galapagos-marinho-uv50", "biquini-galapagos-ocre-uv-50", "biquini-galapagos-preto-uv50", "biquini-galapagos-verde-uv50", "biquini-galapagos-off-white-uv50", "biquini-conchas-cereja-uv50", "biquini-conchas-ocre-uv50", "biquini-conchas-preto-uv50", "biquini-conchas-verde-uv-50", "biquini-canarias-chumbo-uv50", "biquini-tenerife-off-white-uv50", "biquini-tenerife-cereja-uv50", "new-combo", "biquini-menorca-camelo-uv-50", "biquini-menorca-marinho-uv-50", "biquini-menorca-off-white-uv-50", "biquini-menorca-preto-uv-50", "biquini-menorca-verde-uv-50", "biquini-menorca-cereja-uv-50", "biquini-sardenha-camelo-uv-50", "biquini-sardenha-cereja-uv-50", "biquini-sardenha-marinho-uv-50", "biquini-sardenha-ocre-uv-50", "biquini-sardenha-off-white-uv-50", "biquini-sardenha-preto-uv-50", "biquini-sardenha-verde-uv-50", "biquini-sardenha-vermelho-uv-50", "biquini-paraty-camelo-uv-50", "biquini-paraty-ocre-uv-50", "biquini-paraty-off-white-uv-50", "biquini-paraty-preto-uv-50", "biquini-paraty-verde-uv-50", "biquini-paraty-vermelho-uv-50", "biquini-ibiza-camelo-uv-50", "biquini-ibiza-cereja-uv-50", "biquini-ibiza-marinho-uv-50", "biquini-ibiza-off-white-uv-50", "biquini-ibiza-preto-uv-50", "biquini-ibiza-verde-uv-50", "biquini-ibiza-vermelho-uv-50", "biquini-formentera-camelo-uv-50", "biquini-formentera-off-white-uv-50", "biquini-formentera-vermelho-uv-50", "biquini-formentera-preto-uv-50", "new-combo-2", "biquini-st-maarten-preto-uv-50", "biquini-st-maarten-marinho-uv-50", "biquini-santorini-petroleo-uv-50", "biquini-santorini-cobalto-uv50", "biquini-belize-rosa-cereja-uv-50-hot-pant-e-top-decote-reto-com-sustentacao", "biquini-buzios-azul-cobalto-uv50-hot-pant-e-top-meia-taca-com-sustentacao", "biquini-buzios-petroleo-uv50", "biquini-belize-petroleo-uv-51", "biquini-st-maarten-vermelho-uv-50", "biquini-aruba-rosa-cereja-uv-50-hot-pant-cavada-com-top-esportivo", "biquini-aruba-chumbo-uv-51", "biquini-aruba-cobalto-uv-51", "biquini-aruba-laranja-ocre-uv-50-hot-pant-cavada-com-top-esportivo", "biquini-aruba-petroleo-uv-51", "biquini-aruba-preto-uv-51", "biquini-aruba-vermelho-uv-50-hot-pant-cavada-com-top-esportivo", "biquini-varadero-uv-50-rosa-cereja", "biquini-varadero-cobalto-uv-50", "biquini-varadero-petroleo-uv-50", "biquini-varadero-preto-uv-50", "biquini-curacao-cereja-uv-51", "biquini-curacao-cobalto-uv-50", "biquini-curacao-petroleo-uv-50", "biquini-curacao-preto-uv-50"],
+      insertionMode: 'replace',
+      productFormSelector: 'form[action="/cart/add"]',
+    }),
+    ...findProductForms({
+      productHandle,
+      compoundProductHandles: [],
+      insertionMode: 'replace',
+      productFormSelector: 'form[action="/cart/add"]',
+    }),
+  ]
+  const productForm = productForms.length === 1 && productForms[0]
+  if (productForm) {
+    productForm.style.setProperty('visibility', 'hidden')
+  }
+})()
+</script>

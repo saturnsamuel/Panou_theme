@@ -1,0 +1,181 @@
+
+<!doctype html>
+<html class="no-js" lang="{{ shop.locale }}">
+<head><script>GSXMLHttpRequest = XMLHttpRequest;</script>
+
+  <!-- Global site tag (gtag.js) - Google Ads: 741203350 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-741203350"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-741203350');
+</script>
+
+<meta name="google-site-verification" content="ZrNJErs3yBLBvv3rdpsbc4yXI_kN_I6ebkXEeJRNhMA" />
+<meta name="facebook-domain-verification" content="x4fui994e98eknw2u4o096s6yh2cs1" />
+
+{% include 'kiwiSizing' %}
+  <meta charset="utf-8">
+  {% include 'pluginseo' %}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="{{ settings.color_button }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  {%- if settings.favicon != blank -%}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+  {%- endif -%}
+
+
+
+  {% include 'social-meta-tags' %}
+
+  {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+
+  <script>
+    var theme = {
+      breakpoints: {
+        medium: 750,
+        large: 990,
+        widescreen: 1400
+      },
+      strings: {
+        addToCart: {{ 'products.product.add_to_cart' | t | json }},
+        soldOut: {{ 'products.product.sold_out' | t | json }},
+        unavailable: {{ 'products.product.unavailable' | t | json }},
+        regularPrice: {{ 'products.product.regular_price' | t | json }},
+        salePrice: {{ 'products.product.sale_price' | t | json }},
+        sale: {{ 'products.product.on_sale' | t | json }},
+        fromLowestPrice: {{ 'products.product.from_lowest_price_html' | t: lowest_price: '[price]' | json }},
+        vendor: {{'products.product.vendor' | t | json }},
+        showMore: {{ 'general.filters.show_more' | t | json }},
+        showLess: {{ 'general.filters.show_less' | t | json }},
+        searchFor: {{ 'general.search.search_for' | t | json }},
+        addressError: {{ 'sections.map.address_error' | t | json }},
+        addressNoResults: {{ 'sections.map.address_no_results' | t | json }},
+        addressQueryLimit: {{ 'sections.map.address_query_limit_html' | t | json }},
+        authError: {{ 'sections.map.auth_error_html' | t | json }},
+        newWindow: {{ 'general.accessibility.link_messages.new_window' | t | json }},
+        external: {{ 'general.accessibility.link_messages.external' | t | json }},
+        newWindowExternal: {{ 'general.accessibility.link_messages.new_window_and_external' | t | json }},
+        removeLabel: {{ 'cart.label.remove' | t: product: '[product]' | json }},
+        update: {{ 'cart.label.update' | t | json }},
+        quantity: {{ 'cart.label.quantity' | t | json }},
+        discountedTotal: {{ 'cart.label.discounted_total' | t | json }},
+        regularTotal: {{ 'cart.label.regular_total' | t | json }},
+        priceColumn: {{ 'cart.label.price_column' | t | json }},
+        quantityMinimumMessage: {{ 'products.product.quantity_minimum_message' | t | json }},
+        cartError: {{ 'cart.general.cart_error' | t | json }},
+        removedItemMessage: {{ 'cart.general.removed_item_html' | t: quantity: '[quantity]', link: '[link]' | json }},
+        unitPrice: {{ 'products.product.unit_price_label' | t | json }},
+        unitPriceSeparator: {{ 'general.accessibility.unit_price_separator' | t | json }},
+        oneCartCount: {{ 'cart.popup.cart_count' | t: count: 1 | json }},
+        otherCartCount: {{ 'cart.popup.cart_count' | t: count: '[count]' | json }},
+        quantityLabel: {{ 'cart.popup.quantity_label' | t: quantity_count: '[count]' | json }},
+        products: {{ 'general.search.products' | t | json }},
+        loading: {{ 'general.search.loading' | t | json }},
+        number_of_results: {{ 'general.search.number_of_results' | t: result_number: '[result_number]', results_count: '[results_count]' | json }},
+        number_of_results_found: {{ 'general.search.number_of_results_found' | t: results_count: '[results_count]' | json }},
+        one_result_found: {{ 'general.search.one_result_found' | t | json }}
+      },
+      moneyFormat: {{ shop.money_format | json }},
+      moneyFormatWithCurrency: {{ shop.money_with_currency_format | json }},
+      settings: {
+        predictiveSearchEnabled: {{ settings.predictive_search_enabled | json }},
+        predictiveSearchShowPrice: {{ settings.predictive_search_show_price | json }},
+        predictiveSearchShowVendor: {{ settings.predictive_search_show_vendor | json }}
+      }
+    }
+
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+
+  {%- if request.page_type contains 'customers/' -%}
+    <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
+  <script src="{{ 'lazysizes.js' | asset_url }}" async="async"></script>
+  <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+
+  {% render 'header-scripts.zipifypages', renderctx: 'thm' %}{{ content_for_header }}
+  {% include 'qikify-apps' %}
+
+  
+
+
+
+    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/46fd696f-9285-4a40-be7f-55654f409dcc-loader.js" ></script>
+
+
+{% include 'booster-common' %}
+  
+{% include 'cscode_discount' %}
+
+  
+<!-- GSSTART Infinite Scroll code start. Do not change --> {% if collection.all_products_count > 1 or product.id > 1 %} <script type="text/javascript" src="https://gravity-apps.com/shopify/js/shopify/infinitescroll5494.js?v=c9290fe6fdbaca81448babe82c41ab5c"></script> {% endif %} <!-- nfinite Scroll code end. Do not change GSEND -->
+</head>
+
+<body class="template-{{ request.page_type | handle }}">
+
+  <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
+
+  {%- if settings.enable_ajax -%}
+    {% include 'cart-popup' %}
+  {%- endif -%}
+
+  {% section 'header' %}
+
+  <div class="page-container drawer-page-content" id="PageContainer">
+
+    <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
+      {{ content_for_layout }}
+    </main>
+
+    {% section 'footer' %}
+
+    <div id="slideshow-info" class="visually-hidden" aria-hidden="true">
+      {{- 'sections.slideshow.navigation_instructions' | t -}}
+    </div>
+
+  </div>
+
+  <ul hidden>
+    <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
+    <li id="a11y-selection-message">{{ 'general.accessibility.selection_help' | t }}</li>
+  </ul>
+{% include 'social-login' %}<!--  MBC Bundle settings  -->
+  	<script>
+      const productType = '{{ product.type }}'
+      const productVariants = {{ product.variants | json }}
+        const productForms = document.querySelectorAll('form[action*="/cart/add"]')
+        let productForm
+        if (productForms.length) {
+        	productForm = Array.from(productForms).find(form => {
+              const selectVariants  = form.querySelector('[name="id"]'),
+                    selectVariantID = selectVariants ? Number(selectVariants.value) : '',
+                    findVariant     = productVariants.find(({id}) => id === selectVariantID)
+              let options, option
+              if (!findVariant) {
+                options = selectVariants ? selectVariants.querySelectorAll('option') : []
+                option  = Array.from(options).find(({value}) => Number(value) === productVariants[0].id)
+              }
+              if (findVariant || option) return true
+            })
+        }
+      const submitBtn = productForm ? productForm.querySelector('[type="submit"]') : null
+      if (submitBtn && productType === 'mbcBundle') {
+        submitBtn.setAttribute('disabled', 'disabled')
+      }
+	</script>
+  <!--  End MBC Bundle settings  -->
+{% render 'th-bundle-product' %} <div class="index-section--flush powr-popup" id="d715e952_1600208737"></div>
+ {% include 'booster-message' %}
+{% render 'page-footer.zipifypages', renderctx: 'thm', ocuapp: ocuapp %} <div class="index-section--flush powr-popup" id="shopify-section-popup-1622150591b1252b47"></div>
+ </body> 
+</html>
+
+
+<meta name="facebook-domain-verification" content="x4fui994e98eknw2u4o096s6yh2cs1" />

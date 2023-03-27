@@ -1,0 +1,930 @@
+{
+  "current": {
+    "pluginseo_pageTitleTruncateChars": "999",
+    "pluginseo_pageTitleEnableAppender": true,
+    "pluginseo_pageTitleAppenderTemplate": "I Panou",
+    "pluginseo_pageTitleAppenderTargetLength": "70",
+    "pluginseo_pageTitleTemplateApplyToAll": true,
+    "pluginseo_pageTitleDefaultTemplate": "%% page_title %% | %% shop.name %%",
+    "pluginseo_pageTitleIndexTemplate": "Vista seu bem-estar",
+    "pluginseo_pageTitleCollectionTemplate": "Shop %% current_tags || join: ', ' || append_not_empty: ' ' %%%% collection.title || escape %% at %% shop.name %%",
+    "pluginseo_metaDescriptionTruncateChars": "170",
+    "pluginseo_metaDescriptionTemplateApplyToAll": true,
+    "pluginseo_metaDescriptionDefaultTemplate": "%% page_description %%",
+    "pluginseo_metaDescriptionIndexTemplate": "peças chaves para uma mulher moderna que busca um armário prático e mais consciente. - bem-vestir - bem-sentir - bem-estar.",
+    "pluginseo_metaDescriptionCollectionTemplate": "%% collection.all_tags || take: '3' || join: ', ' || prepend_not_empty: 'Shop ' || append_not_empty: ' and more ' %%%% collection.title || escape %% at %% shop.name %% %% collection.description || strip_html || strip_newlines || escape || strip %%",
+    "color_text": "#3a3a3a",
+    "color_body_text": "#333232",
+    "color_sale_text": "#e97e51",
+    "color_button": "#3a3a3a",
+    "color_button_text": "#ffffff",
+    "color_small_button_text_border": "#3a3a3a",
+    "color_text_field_text": "#000000",
+    "color_text_field_border": "#cccccc",
+    "color_text_field": "#ffffff",
+    "color_image_overlay_text": "rgba(0,0,0,0)",
+    "color_image_overlay": "#685858",
+    "image_overlay_opacity": 0,
+    "color_borders": "#ebebeb",
+    "color_body_bg": "#ffffff",
+    "type_header_font": "abel_n4",
+    "type_header_base_size": 25,
+    "type_base_font": "abel_n4",
+    "type_base_size": 16,
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": false,
+    "share_image": "",
+    "share_facebook": true,
+    "share_twitter": false,
+    "share_pinterest": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "https:\/\/facebook.com\/panou.br",
+    "social_pinterest_link": "https:\/\/br.pinterest.com\/panou_br\/_shop\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/panou_br\/",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCCpphTSF6BajyZToDPcpjFg",
+    "social_vimeo_link": "",
+    "favicon": "shopify:\/\/shop_images\/iconepanou.png",
+    "enable_ajax": true,
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo-660556517-1547819084-b8b7685a101dfeff3390d279131b705c1547819084_1_be01b360-2c68-441f-b69d-65e276fce9a6.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#197bbd",
+    "checkout_button_color": "#197bbd",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "center",
+          "logo": "shopify:\/\/shop_images\/logo_panou_shopify_c004d4a7-b834-4a46-8db0-59d271047a12.jpg",
+          "logo_max_width": 180,
+          "main_linklist": "main-menu",
+          "message": true,
+          "home_page_only": false,
+          "message_text": "Use o Cupom 10%AGORA e ganhe 10% OFF na sua 1ª comrpra* I Frete Zero acima de $250",
+          "message_link": "",
+          "color_bg": "#7a7a7a",
+          "color_text": "#f0f0f0"
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/IMG_6453_2pequena.png",
+          "layout": "left",
+          "title": "olá, somos a  P A N O U",
+          "text": "<p><\/p><p><\/p><p>.<\/p><p>bem-vestir<\/p><p>bem-sentir<\/p><p>bem-estar<\/p><p>.<\/p><p>através do [ d e s i g n ] <\/p><p>ú n i c o  e  i n t e l i g e n t e<\/p><p>.<\/p><p><\/p><p>porque sim,<\/p><p>&quot;c o l o r i r . é . p r e c i s o”<\/p><p>.<\/p><p>d e s c o m p l i c a r <\/p><p>também.<\/p><p><a href=\"\/pages\/nosso-olhar\" title=\"nosso olhar\">saiba mais<\/a><\/p>",
+          "button_label": ""
+        }
+      },
+      "feature-columns": {
+        "type": "feature-columns",
+        "disabled": true,
+        "blocks": {
+          "feature-columns-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/modelagem.jpg",
+              "title": "_LINHA BIO",
+              "text": "<p>[ conforto e versatilidade ] <\/p><p>que te acompanham por muito tempo <\/p><p>.<\/p><p>representa a busca por um armário mais consciente, inteligente e atual<\/p><p>.<\/p><p>feita de malha fria biodegradável (87% poliamida e 13% elastano) , UV 50 e que não amassa<\/p><p>.<\/p><p>é uma linha permanente e atemporal<\/p>",
+              "button_label": "saiba mais",
+              "button_link": "shopify:\/\/pages\/modelagem"
+            }
+          },
+          "feature-columns-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/estamparia_b1a7e17c-b7d1-4aea-aaf6-67a5856ccd0b.jpg",
+              "title": "_ESTAMPARIA",
+              "text": "<p>[ estampas únicas em edições limitadas ]<\/p><p>.<br\/>a estamparia aqui na PANOU foi início de tudo, já que a marca foi criada em um estúdio de estampas<\/p><p>.<br\/>é através de nossos traços, formas e cores a que celebramos a arte e a nossa identidade<\/p><p>.<\/p><p>é nossa tela em branco ponto de partida no desenvolvimento de nossas coleções<br\/>.<br\/>todas as estampas são produzidas em tiragens limitadas<\/p>",
+              "button_label": "saiba mais",
+              "button_link": "shopify:\/\/pages\/estamparia"
+            }
+          },
+          "feature-columns-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/sustentabilidade_42bdd768-066f-429b-9b5e-557566424c33.jpg",
+              "title": "_SUSTENTABILIDADE",
+              "text": "<p><\/p><p><\/p><p>pra gente aqui sustentabilidade tem a ver com geração de riqueza de forma eficiente e consciente,<\/p><p>tem a ver com qualidade de vida,<\/p><p>impacto socio-ambiental positivo,<\/p><p>otimização,<\/p><p>tecnologia<\/p><p><\/p><p><\/p><p>se responsabilizar<\/p><p>se sustentar<\/p><p>sustentar seu entorno<\/p><p>ser suficiente<\/p>",
+              "button_label": "saiba mais",
+              "button_link": "shopify:\/\/pages\/sustentabilidade"
+            }
+          }
+        },
+        "block_order": [
+          "feature-columns-0",
+          "feature-columns-1",
+          "feature-columns-2"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "left"
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "disabled": true,
+        "settings": {
+          "title": "Mais vendidos",
+          "collection": "todos",
+          "grid": 3,
+          "rows": 5,
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "title": "Mais",
+              "menu": "maio2021"
+            }
+          },
+          "footer-1": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter"
+            }
+          },
+          "1592511775005": {
+            "type": "text",
+            "settings": {
+              "title": "Varal de ideas Arte em Superfície",
+              "text": "<p>CNPJ: 07.861.196\/0001-58<\/p><p>Contato<\/p><p><a href=\"\/pages\/contato\" title=\"contato\">contato@panou.com.br<\/a><\/p><p><\/p><p><a href=\"\/pages\/casa-panou\" title=\"Casa Panou\">Casa Panou<\/a><\/p><p><\/p><p>*30% off na segunda peça de menor ou igual valor\/ desconto aplicado no check out. <\/p>"
+            }
+          },
+          "b43c9dac-3490-48cc-8229-142aa2111a27": {
+            "type": "text",
+            "settings": {
+              "title": "*Desconto não cumulativo",
+              "text": ""
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1",
+          "1592511775005",
+          "b43c9dac-3490-48cc-8229-142aa2111a27"
+        ],
+        "settings": {
+          "show_payment_icons": true,
+          "color_footer_bg": "#f6f6f6",
+          "color_footer_text": "#333232",
+          "show_locale_selector": true,
+          "show_currency_selector": false
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": false,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": false,
+          "media_size": "large",
+          "enable_image_zoom": true,
+          "enable_video_looping": true
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "Talvez você também goste de",
+          "show_vendor": false
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 3,
+          "rows": 8,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": false
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": 2
+        }
+      },
+      "1597235840714": {
+        "type": "image-bar",
+        "disabled": true,
+        "blocks": {
+          "90eb08ee-a05e-4804-bfd5-567189385b45": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_dia_das_maes_2022_2000_px_x_1080_px_3.png",
+              "alignment": "top",
+              "link": "shopify:\/\/collections\/lencos",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "90eb08ee-a05e-4804-bfd5-567189385b45"
+        ],
+        "settings": {
+          "section_height": "large"
+        }
+      },
+      "16040881811c5de6e0": {
+        "type": "image-bar",
+        "blocks": {
+          "e09f3fa2-4b68-4cc9-922b-c6b2a281c85b": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/4-_roupas_a18a2df0-0098-4c7b-b415-f1f054e0209c.png",
+              "alignment": "top",
+              "link": "shopify:\/\/collections\/roupas",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "e09f3fa2-4b68-4cc9-922b-c6b2a281c85b"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "1615663654d21ccaee": {
+        "type": "image-bar",
+        "blocks": {
+          "1615663654d21ccaee-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/4-_linha_praia_364837e3-8e6e-465e-9af6-1dd35a3bf60c.png",
+              "alignment": "top",
+              "link": "shopify:\/\/collections\/beach-wear",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1615663654d21ccaee-0"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "161566423237ebceea": {
+        "type": "image-bar",
+        "disabled": true,
+        "blocks": {
+          "161566423237ebceea-2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Group_1_04966533-46a0-47c5-acb8-ea8efb76f013.png",
+              "alignment": "top",
+              "link": "shopify:\/\/collections\/linha-bio-uv-50",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "161566423237ebceea-2"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "1615667619659aa5c1": {
+        "type": "image-bar",
+        "blocks": {
+          "1615667619659aa5c1-2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2_-_lencos_6fb417f1-2666-4a9a-846e-2ff8725b3573.png",
+              "alignment": "center",
+              "link": "shopify:\/\/collections\/lencos",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1615667619659aa5c1-2"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "1615668521d6f07b17": {
+        "type": "image-bar",
+        "blocks": {
+          "1615668521d6f07b17-2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/5-_eu_reciclo_193bdd2b-5aeb-4e02-a090-50e6e05819fa.png",
+              "alignment": "center",
+              "link": "shopify:\/\/pages\/sustentabilidade",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1615668521d6f07b17-2"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "1618864938ca91944a": {
+        "type": "image-bar",
+        "disabled": true,
+        "blocks": {
+          "f852f3a7-d630-4339-9511-58a7c76605c8": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1-_banner_colecao_77acb805-6a3b-401d-9133-b29b8119c98f.png",
+              "alignment": "top",
+              "link": "shopify:\/\/collections\/lancamentos",
+              "cta_label": ""
+            }
+          },
+          "edd67013-37fb-4d9d-ab0d-bf65ece7f728": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1-_home_90220c59-4e36-4463-909f-232687288459.png",
+              "alignment": "top",
+              "link": "shopify:\/\/collections\/lancamentos",
+              "cta_label": ""
+            }
+          },
+          "5a739c99-5655-4508-99ce-104509a5a6ed": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_8939.jpg",
+              "alignment": "center",
+              "link": "shopify:\/\/collections\/november-off",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "f852f3a7-d630-4339-9511-58a7c76605c8",
+          "edd67013-37fb-4d9d-ab0d-bf65ece7f728",
+          "5a739c99-5655-4508-99ce-104509a5a6ed"
+        ],
+        "settings": {
+          "section_height": "large"
+        }
+      },
+      "1619622727efce380a": {
+        "type": "image-bar",
+        "disabled": true,
+        "blocks": {
+          "1619622727efce380a-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ebook_6ce46f32-33e2-447a-88f3-65070e6a9266.png",
+              "alignment": "center",
+              "link": "https:\/\/mailchi.mp\/panou\/ebook",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1619622727efce380a-0"
+        ],
+        "settings": {
+          "section_height": "small"
+        }
+      },
+      "1620927412e9179b0e": {
+        "type": "image-bar",
+        "disabled": true,
+        "blocks": {
+          "1620927412e9179b0e-2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BANNER_SEMANA_DO_CONSUMIDOR_-_PANOU_6.jpg",
+              "alignment": "top",
+              "link": "shopify:\/\/collections\/promo",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1620927412e9179b0e-2"
+        ],
+        "settings": {
+          "section_height": "large"
+        }
+      },
+      "16285185398a11265d": {
+        "type": "collection",
+        "disabled": true,
+        "settings": {
+          "title": "MAIS VENDIDOS",
+          "collection": "pareo",
+          "grid": 4,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      },
+      "16358001671b3759ab": {
+        "type": "image-bar",
+        "blocks": {
+          "16358001671b3759ab-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/sea_shepherd_258a96eb-9160-48f9-b48a-a3958d9bf080.png",
+              "alignment": "center",
+              "link": "shopify:\/\/collections\/sea-shepherd",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "16358001671b3759ab-0"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_ajax_enable": true,
+          "cart_notes_enable": false
+        }
+      }
+    },
+    "content_for_index": [
+      "1620927412e9179b0e",
+      "1618864938ca91944a",
+      "1615667619659aa5c1",
+      "1615663654d21ccaee",
+      "1597235840714",
+      "16040881811c5de6e0",
+      "161566423237ebceea",
+      "16358001671b3759ab",
+      "1619622727efce380a",
+      "1615668521d6f07b17",
+      "16285185398a11265d"
+    ],
+    "blocks": {
+      "11813581335429059158": {
+        "type": "shopify:\/\/apps\/whatsapp-chat-widget\/blocks\/app-embed\/b85b5e45-9cea-417a-9b9e-0aa961ccf3ef",
+        "disabled": true,
+        "settings": {
+          "show_on_desktop": true,
+          "show_on_mobile": true,
+          "show_label_on_desktop": true,
+          "show_label_on_mobile": true,
+          "show_scroll_bar": false,
+          "show_gdpr_notice": false,
+          "use_click_to_chat": false,
+          "widget_label_text": "Need Help? Chat with us",
+          "widget_text": "Start a Conversation",
+          "description": "Hi! Click one of our member below to chat on WhatsApp",
+          "response_text": "The team typically replies in a few minutes.",
+          "gdpr_text": "Please accept our privacy policy first to start a conversation.",
+          "background_color": "#2db742",
+          "text_color": "#ffffff",
+          "position": "right",
+          "label_width": 155,
+          "scroll_bar_height": 500,
+          "icon_size": 56,
+          "distance_left": 30,
+          "distance_right": 30,
+          "distance_bottom": 30
+        }
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero-1": {
+          "type": "hero",
+          "settings": {
+            "hero_size": "large",
+            "text_size": "large"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "feature-columns": {
+          "type": "feature-columns",
+          "blocks": {
+            "feature-columns-0": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-1": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-2": {
+              "type": "text_block",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "grid": 4
+          }
+        },
+        "hero-2": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "quotes": {
+          "type": "quotes",
+          "blocks": {
+            "quotes-0": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-1": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-2": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "quotes-0",
+            "quotes-1",
+            "quotes-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "image-bar": {
+          "type": "image-bar",
+          "blocks": {
+            "image-bar-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-1": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-2": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "image-bar-0",
+            "image-bar-1",
+            "image-bar-2"
+          ],
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "footer-1": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ],
+          "settings": {
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+        "hero-1",
+        "feature-row",
+        "feature-columns",
+        "collection",
+        "hero-2",
+        "quotes",
+        "image-bar"
+      ],
+      "blocks": {
+        "mex-cart-theme-app-extension": {
+          "type": "shopify:\/\/apps\/mex-cart-discount-on-cart\/blocks\/app-embed\/fb02218c-8a0b-4969-af9f-edae9fae809a",
+          "settings": {
+            "theme_id": 82635423780
+          },
+          "disabled": false
+        }
+      }
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_variant_labels": true,
+            "show_vendor": false,
+            "show_share_buttons": true,
+            "media_size": "medium",
+            "enable_image_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {}
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {
+            "color_footer_bg": "#f8f8f8",
+            "color_footer_text": "#6d6d6d"
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ],
+      "blocks": {
+        "mex-cart-theme-app-extension": {
+          "type": "shopify:\/\/apps\/mex-cart-discount-on-cart\/blocks\/app-embed\/fb02218c-8a0b-4969-af9f-edae9fae809a",
+          "settings": {
+            "theme_id": 82635423780
+          },
+          "disabled": false
+        }
+      }
+    }
+  }
+}
