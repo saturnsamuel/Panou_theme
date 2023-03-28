@@ -67,7 +67,6 @@
         "type": "header",
         "settings": {
           "align_logo": "center",
-          "logo": "shopify:\/\/shop_images\/logo_panou_shopify_c004d4a7-b834-4a46-8db0-59d271047a12.jpg",
           "logo_max_width": 180,
           "main_linklist": "main-menu",
           "message": true,
@@ -156,7 +155,7 @@
             "type": "link_list",
             "settings": {
               "title": "Mais",
-              "menu": "maio2021"
+              "menu": ""
             }
           },
           "footer-1": {
@@ -243,7 +242,6 @@
             "type": "image",
             "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner_dia_das_maes_2022_2000_px_x_1080_px_3.png",
               "alignment": "top",
               "link": "shopify:\/\/collections\/lencos",
               "cta_label": ""
@@ -263,7 +261,7 @@
           "e09f3fa2-4b68-4cc9-922b-c6b2a281c85b": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/4-_roupas_a18a2df0-0098-4c7b-b415-f1f054e0209c.png",
+              "image": "shopify:\/\/shop_images\/imagem_2023-03-28_174437222.png",
               "alignment": "top",
               "link": "shopify:\/\/collections\/roupas",
               "cta_label": ""
@@ -283,7 +281,7 @@
           "1615663654d21ccaee-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/4-_linha_praia_364837e3-8e6e-465e-9af6-1dd35a3bf60c.png",
+              "image": "shopify:\/\/shop_images\/imagem_2023-03-28_174206658.png",
               "alignment": "top",
               "link": "shopify:\/\/collections\/beach-wear",
               "cta_label": ""
@@ -304,7 +302,6 @@
           "161566423237ebceea-2": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Group_1_04966533-46a0-47c5-acb8-ea8efb76f013.png",
               "alignment": "top",
               "link": "shopify:\/\/collections\/linha-bio-uv-50",
               "cta_label": ""
@@ -324,7 +321,7 @@
           "1615667619659aa5c1-2": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/2_-_lencos_copy.png",
+              "image": "shopify:\/\/shop_images\/imagem_2023-03-28_174127944.png",
               "alignment": "center",
               "link": "shopify:\/\/collections\/lencos",
               "cta_label": ""
@@ -344,7 +341,7 @@
           "1615668521d6f07b17-2": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/5-_eu_reciclo_193bdd2b-5aeb-4e02-a090-50e6e05819fa.png",
+              "image": "shopify:\/\/shop_images\/imagem_2023-03-28_174653616.png",
               "alignment": "center",
               "link": "shopify:\/\/pages\/sustentabilidade",
               "cta_label": ""
@@ -365,7 +362,6 @@
           "f852f3a7-d630-4339-9511-58a7c76605c8": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/1-_banner_colecao_77acb805-6a3b-401d-9133-b29b8119c98f.png",
               "alignment": "top",
               "link": "shopify:\/\/collections\/lancamentos",
               "cta_label": ""
@@ -375,7 +371,6 @@
             "type": "image",
             "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/1-_home_90220c59-4e36-4463-909f-232687288459.png",
               "alignment": "top",
               "link": "shopify:\/\/collections\/lancamentos",
               "cta_label": ""
@@ -385,7 +380,6 @@
             "type": "image",
             "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_8939.jpg",
               "alignment": "center",
               "link": "shopify:\/\/collections\/november-off",
               "cta_label": ""
@@ -408,7 +402,6 @@
           "1619622727efce380a-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/ebook_6ce46f32-33e2-447a-88f3-65070e6a9266.png",
               "alignment": "center",
               "link": "https:\/\/mailchi.mp\/panou\/ebook",
               "cta_label": ""
@@ -429,7 +422,6 @@
           "1620927412e9179b0e-2": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/BANNER_SEMANA_DO_CONSUMIDOR_-_PANOU_6.jpg",
               "alignment": "top",
               "link": "shopify:\/\/collections\/promo",
               "cta_label": ""
@@ -461,7 +453,6 @@
           "16358001671b3759ab-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/sea_shepherd_258a96eb-9160-48f9-b48a-a3958d9bf080.png",
               "alignment": "center",
               "link": "shopify:\/\/collections\/sea-shepherd",
               "cta_label": ""
@@ -495,36 +486,7 @@
       "1619622727efce380a",
       "1615668521d6f07b17",
       "16285185398a11265d"
-    ],
-    "blocks": {
-      "11813581335429059158": {
-        "type": "shopify:\/\/apps\/whatsapp-chat-widget\/blocks\/app-embed\/b85b5e45-9cea-417a-9b9e-0aa961ccf3ef",
-        "disabled": true,
-        "settings": {
-          "show_on_desktop": true,
-          "show_on_mobile": true,
-          "show_label_on_desktop": true,
-          "show_label_on_mobile": true,
-          "show_scroll_bar": false,
-          "show_gdpr_notice": false,
-          "use_click_to_chat": false,
-          "widget_label_text": "Need Help? Chat with us",
-          "widget_text": "Start a Conversation",
-          "description": "Hi! Click one of our member below to chat on WhatsApp",
-          "response_text": "The team typically replies in a few minutes.",
-          "gdpr_text": "Please accept our privacy policy first to start a conversation.",
-          "background_color": "#2db742",
-          "text_color": "#ffffff",
-          "position": "right",
-          "label_width": 155,
-          "scroll_bar_height": 500,
-          "icon_size": 56,
-          "distance_left": 30,
-          "distance_right": 30,
-          "distance_bottom": 30
-        }
-      }
-    }
+    ]
   },
   "presets": {
     "Default": {
