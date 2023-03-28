@@ -155,7 +155,7 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "title": "Mais",
+              "title": "More",
               "menu": ""
             }
           },
@@ -168,14 +168,14 @@
           "1592511775005": {
             "type": "text",
             "settings": {
-              "title": "Varal de ideas Arte em Superfície",
-              "text": "<p>CNPJ: 07.861.196\/0001-58<\/p><p>Contato<\/p><p><a href=\"\/pages\/contato\" title=\"contato\">contato@panou.com.br<\/a><\/p><p><\/p><p><a href=\"\/pages\/casa-panou\" title=\"Casa Panou\">Casa Panou<\/a><\/p><p><\/p><p>*30% off na segunda peça de menor ou igual valor\/ desconto aplicado no check out. <\/p>"
+              "title": "Clothesline for ideas Surface Art",
+              "text": "<p>CNPJ: 07.861.196\/0001-58<\/p><p>Contact<\/p><p><\/p><p><a href=\"\/pages\/contato\" title=\"contato\">contato@panou.com.br<\/a><\/p><p><\/p><p><a href=\"\/pages\/casa-panou\" title=\"Casa Panou\">Casa Panou<\/a><\/p><p><\/p><p>*30% off on the second piece of lesser or equal value \/ discount applied at check out.<\/p>"
             }
           },
           "b43c9dac-3490-48cc-8229-142aa2111a27": {
             "type": "text",
             "settings": {
-              "title": "*Desconto não cumulativo",
+              "title": "*Non-cumulative discount",
               "text": ""
             }
           }
