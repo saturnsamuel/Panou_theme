@@ -454,6 +454,7 @@
           "16358001671b3759ab-0": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/imagem_2023-03-30_150221282.png",
               "alignment": "center",
               "link": "shopify:\/\/collections\/teste",
               "cta_label": ""
