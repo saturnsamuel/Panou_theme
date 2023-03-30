@@ -218,7 +218,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {% render 'qikify-apps' %}
 <!-- GSSTART Infinite Scroll code start. Do not change --> {% if collection.all_products_count > 1 or product.id > 1 %} <script type="text/javascript" src="https://gravity-apps.com/shopify/js/shopify/infinitescroll5494.js?v=c9290fe6fdbaca81448babe82c41ab5c"></script> {% endif %} <!-- nfinite Scroll code end. Do not change GSEND -->
 <link rel="stylesheet" href="{{ 'seedgrow-whatsapp-style.css' | asset_url }}">{% capture cur %}{% include "booster-currency" %}{% endcapture %}{% unless cur contains "Liquid error" %}{{ cur }}{% endunless %}
-{% render "geo" %}</head>
+</head>
 
 <body class="template-{{ request.page_type | handle }}">
 
