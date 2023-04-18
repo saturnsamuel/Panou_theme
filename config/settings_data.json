@@ -187,8 +187,8 @@
           "b43c9dac-3490-48cc-8229-142aa2111a27"
         ],
         "custom_css": [
-          ".site-footer__item:first-of-type {flex: 1 30%; padding-left: auto; padding-right:0px;}",
-          ".site-footer__item--one-quarter {flex: 1 1 30%; padding-left: 0; padding-right: 40px;}"
+          ".site-footer__item:first-of-type {flex: 1 25%; padding-left: auto; }",
+          ".site-footer__item--one-quarter {flex: 1 1 35%; padding-left: 0; }"
         ],
         "settings": {
           "show_payment_icons": true,
