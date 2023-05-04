@@ -260,7 +260,7 @@
           "e09f3fa2-4b68-4cc9-922b-c6b2a281c85b": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/imagem_2023-03-28_174437222.png",
+              "image": "shopify:\/\/shop_images\/roupas_clothes.png",
               "alignment": "top",
               "link": "shopify:\/\/collections\/roupas",
               "cta_label": ""
@@ -280,7 +280,7 @@
           "1615663654d21ccaee-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/imagem_2023-03-28_174206658.png",
+              "image": "shopify:\/\/shop_images\/beachwear.png",
               "alignment": "top",
               "link": "shopify:\/\/collections\/beach-wear",
               "cta_label": ""
@@ -320,7 +320,7 @@
           "1615667619659aa5c1-2": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/imagem_2023-03-28_174127944.png",
+              "image": "shopify:\/\/shop_images\/banners_alto_verao_ocre_72dpi.jpg",
               "alignment": "center",
               "link": "shopify:\/\/collections\/lencos",
               "cta_label": ""
@@ -452,7 +452,7 @@
           "16358001671b3759ab-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/imagem_2023-03-30_150221282.png",
+              "image": "shopify:\/\/shop_images\/seashepperd.png",
               "alignment": "center",
               "link": "shopify:\/\/collections\/teste",
               "cta_label": ""
