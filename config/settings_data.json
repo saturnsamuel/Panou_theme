@@ -68,7 +68,7 @@
         "settings": {
           "align_logo": "center",
           "logo": "shopify:\/\/shop_images\/logo_panou_shopify_c004d4a7-b834-4a46-8db0-59d271047a12.jpg",
-          "logo_max_width": 180,
+          "logo_max_width": 125,
           "main_linklist": "main-menu",
           "message": false,
           "home_page_only": false,
