@@ -398,7 +398,7 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
                  {%- assign barcode = variant.barcode -%}
                  {%- assign barcodeKey = "" -%}
                  {%- assign barcodeLength = barcode | size -%}
-                 {%- case barcodeLength 8 -%}
+                 {%- case barcodeLength -%}
                    {%- when 8 %}
                      {%- assign barcodeKey = "gtin8" -%}
                    {%- when 12 -%}
@@ -477,7 +477,7 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
           {%- assign barcode = product_or_variant.barcode -%}
           {%- assign barcodeKey = "" -%}
           {%- assign barcodeLength = barcode | size -%}
-          {%- case barcodeLength 8 -%}
+          {%- case barcodeLength -%}
             {%- when 8 %}
               {%- assign barcodeKey = "gtin8" -%}
             {%- when 12 -%}
@@ -563,3 +563,16 @@ https://developers.google.com/search/docs/data-types/sitelinks-searchbox
     }
   </script>
 {%- endif -%}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- case barcodeLength 8 -%}"
+  to: "{%- case barcodeLength -%}"
+  position: 17319..17345
+- from: "{%- case barcodeLength 8 -%}"
+  to: "{%- case barcodeLength -%}"
+  position: 20884..20910
+{% endcomment %}

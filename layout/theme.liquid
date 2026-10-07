@@ -20,7 +20,7 @@
 {% assign fa_google_ads_audience_tag_id = 741203350 %}
 
 <!-- Please add your alpha2 code, you can find it here: https://help.shopify.com/en/api/custom-storefronts/storefront-api/reference/enum/countrycode -->
-{% assign fa_product_id_alpha2_code = ‘BR’ %}
+{% assign fa_product_id_alpha2_code = BR %}
 
 <!-- set your product id values are default, product_id, parent_id, sku-->
 {% assign fa_product_id = 'product_id' %}
@@ -323,3 +323,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% assign fa_product_id_alpha2_code = ‘BR’ %}"
+  to: "{% assign fa_product_id_alpha2_code = BR %}"
+  position: 839..882
+{% endcomment %}
